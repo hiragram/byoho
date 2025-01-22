@@ -6,6 +6,9 @@ import PackageDescription
 let package = Package(
     name: "byoho",
     platforms: [.macOS(.v10_15)],
+    products: [
+        .executable(name: "bh", targets: ["bh"]),
+    ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.5.0"),
         .package(url: "https://github.com/kylef/PathKit", from: "1.0.0"),
